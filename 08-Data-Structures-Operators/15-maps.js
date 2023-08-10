@@ -58,6 +58,12 @@ const question = new Map([
 ]);
 console.log(question); // → Map(7) {size: 7, question => What is th…language?, 1 => C, ...}
 
+// Convert object to map
+console.log(Object.entries(openingHours));
+const hoursMap = new Map(Object.entries(openingHours));
+console.log(hoursMap);
+
+
 for (const [key, value] of question) {
   if (typeof key === "number") {
     console.log(`Answer ${key}: ${value}`);
