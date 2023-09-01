@@ -11,7 +11,9 @@ const account = {
   },
 };
 
-console.log(account.latest); //-> 300
+console.log(account.latest); // -> 300
 
 account.latest = 50;
-console.log(account.movements);
+console.log(account.movements); // -> [ 200, 530, 120, 300, 50 ]
+
+// Now however, classes do also have getters and setters, and they do indeed work in the exact same way.
