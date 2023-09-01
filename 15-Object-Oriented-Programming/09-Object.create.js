@@ -1,4 +1,6 @@
 // Object.create
+// Object.create creates a new object, and the prototype of that object will be the object that we passed in.
+
 const PersonProto = {
   calcAge() {
     console.log(2037 - this.birthYear);
