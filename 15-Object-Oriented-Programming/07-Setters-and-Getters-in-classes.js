@@ -1,3 +1,4 @@
+//Can be used for validation when adding data
 class PersonCl {
   constructor(fullName, birthYear) {
     this.fullName = fullName;
