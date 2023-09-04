@@ -44,6 +44,6 @@ EV.prototype.accelerate = function () {
 
 const tesla = new EV('Tesla', 120, 23);
 tesla.chargeBattery(90);
-console.log(tesla);
-tesla.brake();
-tesla.accelerate();
+console.log(tesla); // - > EV {make: 'Tesla', speed: 120, charge: 90}
+tesla.brake(); // - > Tesla is going at 115 km/h
+tesla.accelerate(); // - > Tesla is going at 135 km/h, with a charge of 89
