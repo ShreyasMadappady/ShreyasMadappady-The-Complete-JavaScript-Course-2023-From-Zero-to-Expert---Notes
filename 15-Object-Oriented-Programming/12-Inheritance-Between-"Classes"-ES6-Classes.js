@@ -55,5 +55,5 @@ class StudentCl extends PersonCl {
 }
 
 const martha = new StudentCl('Martha Jones', 2012, 'Computer Science');
-martha.introduce();
-martha.calcAge();
+martha.introduce(); // -> My name is Martha Jones and I study Computer Science
+martha.calcAge(); // -> I'm 25 years old, but as a student I feel more like 35
