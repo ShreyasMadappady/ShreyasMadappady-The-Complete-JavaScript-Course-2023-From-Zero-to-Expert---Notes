@@ -1,3 +1,4 @@
+// Chaining method is at the bottom!
 class Account {
   locale = navigator.language;
 
