@@ -9,6 +9,9 @@ const getJSON = function (url, errorMsg = 'Something went wrong') {
 };
 
 // Promise.race
+
+// The Promise.race() method is a JavaScript method that returns a promise that resolves or rejects as soon as one of the promises in an iterable resolves or rejects, with the value or reason from that promise.
+
 (async function () {
   const res = await Promise.race([
     getJSON(`https://countries-api-836d.onrender.com/countries/name/italy`),
@@ -38,6 +41,9 @@ Promise.race([
   // -> After 2s.... {alpha2Code: 'TZ', alpha3Code: 'TZA', altSpellings: Array(3), area: 945087, borders: Array(8), …}
 
 // Promise.allSettled
+
+// The Promise.allSettled() method is a JavaScript method that returns a promise that resolves when all of the promises in an iterable have settled, either fulfilled or rejected. The returned promise resolves with an array of objects, each of which describes the outcome of one of the input promises.
+
 Promise.allSettled([
   Promise.resolve('Success'),
   Promise.reject('ERROR'),
@@ -51,6 +57,9 @@ Promise.allSettled([
 length: 3
 [[Prototype]]: Array(0)
 
+// Promise.all
+// The Promise.all() method is a JavaScript method that returns a promise that resolves when all of the promises in an iterable have resolved, with an array of the fulfillment values. It rejects if any of the promises in the iterable reject.
+
 Promise.all([
   Promise.resolve('Success'),
   Promise.reject('ERROR'),
@@ -62,6 +71,8 @@ Promise.all([
   // -> demo.js:61 ERROR
 
 // Promise.any [ES2021]
+// The Promise.any() method is a JavaScript method that returns a promise that resolves as soon as one of the promises in an iterable resolves, with the value from that promise. It rejects if all of the promises in the iterable reject.
+
 Promise.any([
   Promise.resolve('Success'),
   Promise.reject('ERROR'),
