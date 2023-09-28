@@ -18,7 +18,7 @@ const removedElement = friends.pop();
 console.log(friends); // → ['John', 'Michael', 'Steven', 'Peter']
 console.log(removedElement); // → Jay
 
-// pop - remove first element from the array
+// shift - remove first element from the array
 // ◦ returns the removed element
 friends.shift();
 console.log(friends); // → ['Michael', 'Steven', 'Peter']
