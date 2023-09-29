@@ -14,6 +14,7 @@ restaurant.numGuests = 0;
 const guest = restaurant.numGuests || 10;
 console.log(guest); // -> 10
 
+// The ?? consider also 0 and '' as the truthy value
 // Nullish : null or undefined( NOT 0 or '')
 const guestCorrect = restaurant.numGuests ?? 10;
 console.log(guestCorrect); // -> 0
